@@ -5,15 +5,16 @@
 // a-)Comparador de desigualdade a!==b 
 // Exemplo:
 
-// function checarDesigualdade(a, b) {
+function checarDesigualdade(a, b) {
 
-//     return `No comparador de desigualdade ${a}!==${b} é ${a !== b}`
-// }
-// console.log(checarDesigualdade(1, 3));
+    return `No comparador de desigualdade ${a}!==${b} é ${a !== b}`
+}
+console.log(checarDesigualdade(1, 3));
 
 // b-)Compare a igualdade entre a===b
 
 //  Sua lógica aqui
+
 function checarIgualdade(a, b) {
     
     return `No comparador de igualdade ${a}=${b} é ${a === b}`
@@ -22,30 +23,49 @@ function checarIgualdade(a, b) {
 
 // c-)Faça uma função chamada "verificaSeEMaior"
 
+function verificaSeEMaior(a, b) {
+    
+    return `No comparador ${a} > ${b} é ${a > b}`
+}
 console.log(verificaSeEMaior(321, 2156));
 
 
 // Exercício 2------------------------------------------------------------------------------------
 //Escreva true or false para as comparações abaixo:
 // exemplo 1>2 = false
-// a-) 1==='1'=
-// b-) 1=='1'=
-// c-) 'a'==='b'=
-// d-) 'b'>'a'=
-// e-) 0!==null=
+// a-) 1==='1'= false (mesmo caracter mas não é o mesmo tipo)
+// b-) 1=='1'= true (mesmo caracter)
+// c-) 'a'==='b'= false (mesmo tipo, mas não mesmo caracter)
+// d-) 'b'>'a'= true (b vem depois de a, logo é maior)
+// e-) 0!==null= true (o é diferente de null mas recebe sinal de inversão "!")
 
 
 // CONDICIONAIS
 
 // Exercício 3------------------------------------------------------------------------------------
 
-const cadastro = () => {
-    const usuario = []
+// const cadastro = () => {
+//     const usuario = []
 
     //  Sua lógica aqui
 
-}
-console.log(cadastro());
+const nomeDoUsuario = prompt ('Qual seu nome?').toLowerCase ();
+const anoDeNascimento =  Number (prompt ('Qual seu ano de nascimento?'));
+const senhaDoUsuario =  prompt ('Qual sua senha? No mínimo 6 caracteres').trim();
+const nacionalidade =  prompt ('Você é brasileiro? Sim ou Não?').toLowerCase();
+const usuario = [nomeDoUsuario,anoDeNascimento,senhaDoUsuario,nacionalidade]
+
+function cadastro (ano, senha, pais){
+
+if ((ano <= 2004) && (senha.length >= 6) && (pais === "sim")){
+console.log ('Bem vindo ao cadastro de usuário');
+} else {
+    console.log("Desculpe, mas não poderemos seguir com o cadastro.");
+}}
+
+cadastro(anoDeNascimento,senhaDoUsuario,nacionalidade)
+
+
 
 // Exercício 4-----------------------------------------------------------------------------------------------
 
