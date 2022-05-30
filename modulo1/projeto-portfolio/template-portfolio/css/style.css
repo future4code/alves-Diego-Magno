@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Tiro Devanagari Sanskrit', serif;
+  background: url("../img/backg.jpg") no-repeat top center;
+  background-attachment: fixed;
+  background-size: cover;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  height: 100vh;
+  color: #fab215;
+}
+
+.title {
+  font-size: 38px;
+  font-weight: normal;
+  text-align: center;
+  background: rgb(243, 77, 77);
+  border-radius: 50px;
+  padding: 1rem;
+  margin-top: 1rem;
+  align-items: center;
+  justify-items: center;
+  background-size: auto;
+  display: grid;
+  
+  
+}
+
+.title2 {
+  font-size: 20px;
+  font-weight: normal;
+  text-align: center;
+  background: rgb(243, 77, 77);
+  border-radius: 50px;
+  padding: 1rem;
+  margin-top: 1rem;
+  align-items: center;
+  justify-items: center;
+  background-size: auto;
+  display: grid;
+  
+  
+}
+
+.box {
+  background: rgb(243, 77, 77);
+  padding: 4rem;
+  border-radius: 50px;
+  text-align: center;
+  margin-top: 8rem;
+  
+}
+
+.profile-pic {
+  border-radius: 50%;
+  margin: 0 auto 2rem auto;
+}
+
+.profile span {
+  font-size: 24px;
+}
+
+.profile p {
+  font-size: 18px;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+.redes {
+  display: flex;
+  justify-content: center;
+}
+
+.redes li {
+  margin-right: 1rem;
+}
+
+.portfolio {
+  max-width: 886px;
+  box-sizing: border-box;
+  
+}
+
+.portfolio ul {
+  margin-top: 3rem;
+  background: url("../img/1.jpg") no-repeat top center;
+  border-radius: 50px;
+  text-align: center;
+}
+
+.portfolio li {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  text-align: left;
+  gap: 1rem;
+  color: #fab215;
+}
+
+.portfolio li {
+  margin-top: 2rem;
+}
+
+.portfolio img {
+  border-radius: 10px;
+}
+
+
